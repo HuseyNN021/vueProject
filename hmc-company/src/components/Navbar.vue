@@ -1,54 +1,52 @@
 <script setup></script>
 
 <template>
-  <div class="flex flex-col md:flex-row items-center md:justify-between px-4 py-2">
-    
-    <!-- Logo -->
-    <div class="flex justify-center items-center w-full md:w-1/4 mb-2 md:mb-0">
-      <img class="navLogo" src="https://www.hmc.az/assets/images/logo.svg" alt="Logo">
-    </div>
+  <header class="bg-white shadow-sm">
+    <div class="flex flex-wrap items-center justify-between px-4 py-3 md:py-4">
+      
+      <div class="flex justify-center items-center w-full md:w-auto mb-3 md:mb-0">
+        <img 
+          src="https://www.hmc.az/assets/images/logo.svg" 
+          alt="Logo"
+          class="h-10 md:h-12"
+        >
+      </div>
 
-    <!-- Menu links -->
-    <div class="flex justify-center items-center w-full md:w-1/2 mb-2 md:mb-0">
-      <ul class="flex flex-col md:flex-row justify-around w-full">
-        <li class="py-1 md:py-0">Əsas səhifə</li>
-        <li class="py-1 md:py-0">Xidmətlərimiz</li>
-        <li class="py-1 md:py-0">Haqqımızda</li>
-        <li class="py-1 md:py-0">Əlaqə</li>
-      </ul>
-    </div>
+      <nav class="w-full md:flex md:items-center md:justify-center md:w-auto">
+        <ul class="flex flex-col md:flex-row items-center gap-2 md:gap-8 text-gray-700 font-medium">
+          <li class="hover:text-blue-600 transition-colors cursor-pointer">Əsas səhifə</li>
+          <li class="hover:text-blue-600 transition-colors cursor-pointer">Xidmətlərimiz</li>
+          <li class="hover:text-blue-600 transition-colors cursor-pointer">Haqqımızda</li>
+          <li class="hover:text-blue-600 transition-colors cursor-pointer">Əlaqə</li>
+        </ul>
+      </nav>
 
-    <!-- Search input -->
-    <div class=" flex justify-center items-center w-full md:w-1/4">
-      <input 
-        type="text" 
-        placeholder="Axtarış..." 
-      >
-    </div>
+      <div class="flex justify-center items-center w-full md:w-auto mt-3 md:mt-0">
+        <input 
+          type="text" 
+          placeholder="Axtarış..." 
+        >
+      </div>
 
-  </div>
+    </div>
+  </header>
 </template>
 
 <style scoped>
-.navLogo{
-    width: 100px;
-    height: 86px;
-    object-fit: contain;
-}
-input {
-  width: 100%;                /* w-full */
-  max-width: 20rem;           /* max-w-xs ~ 20rem */
-  padding: 0.5rem 0.75rem;    /* py-2 px-3 */
-  font-size: 0.875rem;        /* text-sm */
-  border: 1px solid #D1D5DB;  /* border border-gray-300 */
-  border-radius: 0.5rem;      /* rounded-lg */
-  outline: none;              /* focus:outline-none */
-  transition: border-color 0.2s, box-shadow 0.2s; /* focus transition */
-}
+  input{
+    width: 100%;                    
+    max-width: 16rem;               
+    border: 1px solid #d1d5db;      
+    border-radius: 0.375rem;         
+    padding: 0.5rem 0.75rem;         
+    font-size: 0.875rem;             
+    transition: all 0.2s ease-in-out;
+  }
 
-input:focus {
-  border-color: #3B82F6;      /* focus:border-blue-500 */
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-2 focus:ring-blue-500 */
-}
+  input:focus {
+    outline: none;                   
+    border-color: #3b82f6;         
+    box-shadow: 0 0 0 2px #3b82f6;   
+  }
 
 </style>

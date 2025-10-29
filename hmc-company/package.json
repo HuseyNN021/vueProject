@@ -12,7 +12,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.22"
+    "swiper": "^12.0.3",
+    "vue": "^3.5.22",
+    "vue3-carousel": "^0.17.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.16",

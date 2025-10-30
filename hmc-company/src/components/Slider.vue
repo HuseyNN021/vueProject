@@ -33,7 +33,7 @@
 
     <!-- Şəkil -->
     <div>
-      <img :src="photos[showImage]" alt="image" class="w-[50vw] h-[70vh]" />
+      <img :src="photos[showImage]" alt="image" class="w-[50vw] h-[70vh] max-lg:h-[50vh] max-sm:h-[40vh] rounded-2xl" />
     </div>
 
     <!-- Sağa baxan üçbucaq -->

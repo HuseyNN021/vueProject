@@ -3,6 +3,8 @@ import Navbar from './components/Navbar.vue';
 import Slider from './components/Slider.vue';
 import About from './components/About.vue';
 import ShowService from './components/ShowService.vue';
+import OurService from './components/OurService.vue';
+import OurMissions from './components/OurMissions.vue';
 
 </script>
 
@@ -11,6 +13,8 @@ import ShowService from './components/ShowService.vue';
     <Slider/>
     <About/>
     <ShowService/>
+    <OurService/>
+    <OurMissions/>
 </template>
 
 <style scoped>

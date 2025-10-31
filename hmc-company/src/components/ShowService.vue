@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="flex justify-center items-center py-10 bg-white ">
+  <section class="flex justify-center items-center py-10 bg-white">
     <div class="flex flex-wrap max-sm:flex-col justify-around gap-6 w-[62.5rem] rounded-2xl bg-[#f0f0f0] p-6 shadow-md">
       
       <div class="flex flex-col items-center text-center">

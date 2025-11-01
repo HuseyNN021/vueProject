@@ -28,7 +28,7 @@
             əməkdaşlıq etməyimizdir. Təhlükəsizlik və etibarlılığın ən yüksək tələblərinə cavab verən
             Məlumat Mərkəzlərində bulud serverlər təklif edirik.
           </p>
-          <button class="rounded-xl border  border-amber-50  hover:bg-black hover:text-amber-100 transition-all">
+          <button class="rounded-xl border  border-gray-500  hover:bg-black hover:text-amber-100 transition-all">
             Daha ətrafı
           </button>
         </div>

@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 </script>
 
 <template>
@@ -7,7 +9,7 @@
       class="absolute inset-0 bg-[url('../assets/Images/futuristic-white-technology-background_23-2148390336.jpg')] bg-cover bg-center blur-sm"
     ></div>
 
-    <div class="relative z-10 flex flex-col items-center justify-center gap-8 py-8">
+    <div class="relative z-10 bg-black/30 rounded-2xl flex flex-col items-center justify-center gap-8 py-8">
       <h1 class="font-montserrat font-bold text-5xl tracking-[0.1em] leading-[110%] ">
         Haqqımızda
       </h1>
@@ -28,9 +30,11 @@
             əməkdaşlıq etməyimizdir. Təhlükəsizlik və etibarlılığın ən yüksək tələblərinə cavab verən
             Məlumat Mərkəzlərində bulud serverlər təklif edirik.
           </p>
-          <button class="rounded-xl border  border-gray-500  hover:bg-black hover:text-amber-100 transition-all">
-            Daha ətrafı
-          </button>
+          <RouterLink to="/aboutUs" >
+            <button class="rounded-xl border  border-gray-500  hover:bg-black hover:text-amber-100 transition-all">
+              Daha ətrafı
+            </button>
+          </RouterLink >
         </div>
       </div>
     </div>

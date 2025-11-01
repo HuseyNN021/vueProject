@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="flex flex-col justify-center items-center bg-black/80 gap-4 py-10 px-4">
+  <section class="flex flex-col justify-center items-center bg-indigo-950 gap-4 py-10 px-4">
     <h3 class="font-montserrat font-bold text-[48px] text-white leading-[150%] tracking-[0.12em]">
       Xidmətlərimiz
     </h3>

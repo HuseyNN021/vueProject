@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="flex flex-col justify-center items-center bg-black/80 gap-4 ">
+  <section class="flex flex-col justify-center items-center bg-indigo-950 gap-4 rounded-t-2xl ">
     <div class="flex flex-col text-white lg:flex-row md:flex-row  justify-around items-center gap-16 max-w-6xl w-full">
 
         <div>
@@ -27,6 +27,9 @@
 </template>
 
 <style scoped>
+section{
+  padding: 1rem;
+}
   input{
     width: 100%;                    
     max-width: 16rem;               

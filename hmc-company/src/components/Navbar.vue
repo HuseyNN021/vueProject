@@ -1,23 +1,38 @@
-<script setup></script>
+<script setup>
+
+import { RouterLink } from 'vue-router';
+
+</script>
 
 <template>
-  <header class="bg-white shadow-sm">
+  <header class="bg-white  shadow-sm rounded-b-2xl sticky top-0 z-50">
     <div class="flex flex-wrap items-center justify-between px-4 py-3 md:py-4">
       
       <div class="flex justify-center items-center w-full md:w-auto mb-3 md:mb-0">
-        <img 
+       <RouterLink to="/">
+         <img 
           src="https://www.hmc.az/assets/images/logo.svg" 
           alt="Logo"
-          class="h-10 md:h-12"
+          class="h-10 md:h-12 text-amber-50"
+          
         >
+       </RouterLink>
       </div>
 
       <nav class="w-full md:flex md:items-center md:justify-center md:w-auto">
-        <ul class="flex flex-col md:flex-row items-center gap-2 md:gap-8 text-gray-700 font-medium">
-          <li class="hover:text-blue-600 transition-colors cursor-pointer">Əsas səhifə</li>
-          <li class="hover:text-blue-600 transition-colors cursor-pointer">Xidmətlərimiz</li>
-          <li class="hover:text-blue-600 transition-colors cursor-pointer">Haqqımızda</li>
-          <li class="hover:text-blue-600 transition-colors cursor-pointer">Əlaqə</li>
+        <ul class="flex flex-col md:flex-row items-center gap-2 md:gap-8 text-gray-500 font-medium">
+          <RouterLink to="/">
+            <li class="hover:text-blue-600 transition-colors cursor-pointer">Əsas səhifə</li>
+          </RouterLink>
+          <RouterLink to="/services">
+            <li class="hover:text-blue-600 transition-colors cursor-pointer">Xidmətlərimiz</li>
+          </RouterLink>
+          <RouterLink to="/aboutUs">
+            <li class="hover:text-blue-600 transition-colors cursor-pointer">Haqqımızda</li>
+          </RouterLink>
+          <RouterLink to="/contactUs">
+            <li class="hover:text-blue-600 transition-colors cursor-pointer">Əlaqə</li>
+          </RouterLink>
         </ul>
       </nav>
 
@@ -33,6 +48,9 @@
 </template>
 
 <style scoped>
+header{
+  padding: 1rem;
+}
   input{
     width: 100%;                    
     max-width: 16rem;               
@@ -41,6 +59,7 @@
     padding: 0.5rem 0.75rem;         
     font-size: 0.875rem;             
     transition: all 0.2s ease-in-out;
+    color: white;
   }
 
   input:focus {

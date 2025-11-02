@@ -33,14 +33,14 @@ function sendMessage() {
       Bizimlə əlaqə saxlayın
     </h3>
 
-    <div class="text-center max-w-3xl space-y-4 mb-12">
-      <p class="bg-gray-800 rounded-2xl p-4">
+    <div class="text-center max-w-3xl flex flex-col gap-5 space-y-4 mb-12" >
+      <p class="bg-gray-800 rounded-2xl p-4" style="padding: 1rem;">
         HMC Company 2013-cü ildən etibarən informasiya texnologiyaları sahəsində fəaliyyət göstərir.
         Biz kiçik və iri bizneslərə yüksək keyfiyyətli İKT xidmətləri təqdim edirik.
         Təcrübəli mütəxəssislərimiz və qabaqcıl texnologiyalarımızla təhlükəsiz, etibarlı və innovativ
         həllər təklif edirik.
       </p>
-      <p class="bg-gray-800 rounded-2xl p-4">
+      <p class="bg-gray-800 rounded-2xl p-4" style="padding: 1rem;">
         HMC Company olaraq hər zaman müştərilərimizin suallarına və təkliflərinə açığıq.
         Aşağıdakı bölmədən bizimlə əlaqə yarada və xidmətlərimiz barədə daha ətraflı məlumat ala bilərsiniz.
       </p>
@@ -58,6 +58,7 @@ function sendMessage() {
           <label
             for="name"
             class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2"
+            style="padding: 0.2em;"
           >
             Ad və Soyad
           </label>
@@ -67,14 +68,16 @@ function sendMessage() {
             type="text"
             maxlength="100"
             class="w-full border-2 border-gray-600 bg-gray-800 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all"
-          />
+            style="padding: 1rem;"          
+            />
         </div>
 
         <div class="relative">
           <label
             for="phone"
             class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2"
-          >
+            style="padding: 0.2rem;"          
+            >
             Əlaqə nömrəsi
           </label>
           <input
@@ -83,14 +86,16 @@ function sendMessage() {
             type="text"
             maxlength="100"
             class="w-full border-2 border-gray-600 bg-gray-800 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all"
-          />
+            style="padding: 1rem;"          
+            />
         </div>
 
         <div class="relative">
           <label
             for="mail"
             class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2"
-          >
+            style="padding: 0.2rem;"          
+            >
             Email
           </label>
           <input
@@ -99,14 +104,17 @@ function sendMessage() {
             type="email"
             maxlength="100"
             class="w-full border-2 border-gray-600 bg-gray-800 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all"
-          />
+            style="padding: 1rem;"
+
+            />
         </div>
 
         <div class="relative">
           <label
             for="mesaj"
-            class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2"
-          >
+            class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2 "
+            style="padding: 0.2rem;"          
+            >
             Mesajınız
           </label>
           <textarea
@@ -114,13 +122,15 @@ function sendMessage() {
             v-model="mesaj"
             maxlength="300"
             class="w-full h-[6rem] border-2 border-gray-600 bg-gray-800 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all resize-none"
-          ></textarea>
+            style="padding: 1rem;"
+            ></textarea>
         </div>
 
         <button
           type="submit"
           class="bg-blue-600 text-white font-semibold py-3 rounded-lg transition-all duration-200 ease-in hover:bg-blue-500"
-        >
+          style="padding: 1rem;"
+          >
           Göndər
         </button>
       </form>

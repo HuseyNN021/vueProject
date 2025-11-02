@@ -1,8 +1,8 @@
 <script setup></script>
 
 <template>
-  <section class="flex flex-col justify-center items-center bg-indigo-950 gap-4 rounded-t-2xl ">
-    <div class="flex flex-col text-white lg:flex-row md:flex-row  justify-around items-center gap-16 max-w-6xl w-full">
+  <section class="flex flex-col justify-center items-center bg-indigo-900 gap-4 rounded-t-2xl   ">
+    <div class="flex flex-col text-white  lg:flex-row md:flex-row  justify-around items-center gap-16 max-w-6xl w-full">
 
         <div>
             <ul>

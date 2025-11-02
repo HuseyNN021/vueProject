@@ -41,7 +41,8 @@ const comments=ref([
 
 <template>
 
-<section class="relative flex flex-col justify-center items-center">
+<div class="bg-gray-900">
+<section class="relative flex flex-col justify-center items-center bg-gray-900">
   <div class="absolute inset-0  bg-[url('../assets/Images/futuristic-white-technology-background_23-2148390336.jpg')] bg-cover bg-center blur-sm opacity-100 z-0"></div>
 
   <h3 class="relative z-10 font-montserrat font-bold text-[48px] text-[#666] leading-[150%] tracking-[0.12em] mb-12">
@@ -58,14 +59,18 @@ const comments=ref([
   </div>
 
 </section>
-<ShowService/>
+<section class="bg-gray-900">
+  <ShowService/>
+</section>
 <section class="flex flex-col justify-center items-center">
-    <h3 class="relative z-10 font-montserrat font-bold text-[30px] text-[#666] leading-[150%] tracking-[0.12em] mb-12">
+    <h3 class="relative z-10 font-montserrat font-bold text-[30px] text-[white] leading-[150%] tracking-[0.12em] mb-12">
       Müştəri rəyləri
     </h3>
         <Comments v-for="value in comments" :name="value.name" :position="value.position" :comment="comments[0].comment"/>
 </section>
 <Footer/>
+
+</div>
 </template>
 
 <style scoped>

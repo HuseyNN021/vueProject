@@ -40,7 +40,7 @@ const prevImage = () => {
     <button @click="prevImage" class="w-0 h-0 border-t-[20px] border-t-transparent border-b-[20px] border-b-transparent border-r-[30px] border-orange-950"></button>
 
     <!-- Şəkil -->
-    <div class="flex items-center">
+    <div class="flex items-center max-sm:flex-col">
       <div>
 
           <h1 class="font-montserrat font-bold w-[40rem] text-[48px] text-gray-500 leading-[150%] tracking-[0.12em]">{{ propsSlider.data[showImage].title }}</h1>

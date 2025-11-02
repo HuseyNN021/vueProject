@@ -47,18 +47,16 @@ const comments=ref([
   <h3 class="relative z-10 font-montserrat font-bold text-[48px] text-[#666] leading-[150%] tracking-[0.12em] mb-12">
     HMC Company
   </h3>
-  <div class="relative z-10 flex justify-around w-full items-center divPadding">
-    <img src="../assets/Images/HMC.jpg" class="w-[30vw] rounded-2xl" alt="HMC" />
-    <p class="w-[50vw]  bg-blue-200 rounded-2xl font-montserrat not-italic font-normal text-base text-blue-950 leading-[150%] tracking-[0.12em] text-center">
+  <div class="relative z-10 flex justify-around w-full max-sm:flex-col items-center gap-5 divPadding">
+    <img src="../assets/Images/HMC.jpg" class="w-[30vw] max-sm:w-[70vw] rounded-2xl" alt="HMC" />
+    <p class="w-[50vw] max-sm:text-xs max-sm:w-[70vw] bg-blue-200 rounded-2xl font-montserrat not-italic font-normal text-base text-blue-950 leading-[150%] tracking-[0.12em] text-center">
       "HMC Company" 2013-cü ildə fəaliyyətə başlamışdır. İstər kiçik ölçülü, istərsə də böyük ölçülü şirkətlərə peşəkar 
       səviyyədə İnformasiya Kommunikasiya Texnologiyaları (İKT) xidmətləri göstəririk. Bu sahədə əsas fərqli cəhətimiz ən 
       qabaqcıl texnoloji biliklərə və təcrübəyə sahib aparıcı mütəxəssislərimizin olması və dünyanın ən qabaqcıl şirkətləri ilə 
       əməkdaşlıq etməyimizdir. Təhlükəsizlik və etibarlılığın ən yüksək tələblərinə cavab verən Məlumat Mərkəzlərində bulud serverlər təklif edirik.
     </p>
   </div>
-  <div>
 
-</div>
 </section>
 <ShowService/>
 <section class="flex flex-col justify-center items-center">

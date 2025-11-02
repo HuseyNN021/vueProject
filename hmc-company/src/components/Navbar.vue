@@ -19,7 +19,7 @@ import { RouterLink } from 'vue-router';
        </RouterLink>
       </div>
 
-      <nav class="w-full md:flex md:items-center md:justify-center md:w-auto">
+      <nav class="w-full md:flex md:items-center md:justify-center md:w-auto max-sm:hidden">
         <ul class="flex flex-col md:flex-row items-center gap-2 md:gap-8 text-gray-500 font-medium">
           <RouterLink to="/">
             <li class="hover:text-blue-600 transition-colors cursor-pointer">Əsas səhifə</li>
@@ -36,11 +36,15 @@ import { RouterLink } from 'vue-router';
         </ul>
       </nav>
 
-      <div class="flex justify-center items-center w-full md:w-auto mt-3 md:mt-0">
+      <div class="flex justify-center items-center w-full md:w-auto mt-3 md:mt-0 max-sm:hidden">
         <input 
           type="text" 
           placeholder="Axtarış..." 
         >
+      </div>
+
+      <div class="hidden max-sm:block" >
+        <i class="pi pi-align-justify"></i>
       </div>
 
     </div>

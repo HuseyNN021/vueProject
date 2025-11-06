@@ -4,12 +4,12 @@ import 'primeicons/primeicons.css'
 
 <template>
   <section class="flex flex-col items-center py-16 px-6 bg-gray-50">
-    <h3 class="font-montserrat font-bold text-[48px] text-[#666] leading-[150%] tracking-[0.12em] mb-12">
+    <h3 class="font-montserrat font-bold text-[48px] text-[#666] leading-[150%] tracking-[0.12em] mb-12 text-center">
       Bizimlə əlaqə
     </h3>
 
     <div class="flex flex-col  lg:flex-row md:flex-row  justify-between items-center gap-16 max-w-6xl w-full">
-      <div class="flex flex-col gap-6 w-full lg:w-1/2">
+      <div class="flex flex-col gap-6   w-full lg:w-1/2 max-sm:grid max-sm:grid-cols-2 ">
         <div class="flex items-start gap-4">
           <i class="pi pi-map-marker text-2xl text-[#666] p-3 bg-gray-200 rounded-full"></i>
           <div>
@@ -105,7 +105,8 @@ import 'primeicons/primeicons.css'
         <button
           type="submit"
           class="bg-[#666] text-white font-semibold py-3 rounded-lg transition-all duration-200 ease-in hover:bg-[#555]"
-        >
+          style="padding: 1rem;"
+          >
           Göndər
         </button>
       </form>
@@ -115,7 +116,7 @@ import 'primeicons/primeicons.css'
 
 <style scoped>
 
-i{ 
+i,input,textarea{ 
     padding: 0.5rem; 
-    }
+  }
 </style>

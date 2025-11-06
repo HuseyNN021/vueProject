@@ -59,7 +59,7 @@ const servicesData=[
 
     <section class="flex flex-col justify-center gap-5 items-center bg-gray-900 py-16 text-white rounded-2xl">
 
-        <h3 class="font-montserrat font-bold text-[48px] text-white leading-[150%] tracking-[0.12em] mb-12">
+        <h3 class="font-montserrat font-bold text-[48px] text-white leading-[150%] tracking-[0.12em] mb-12 text-center">
             HMC Company
         </h3>
         <p style="padding: 1rem;" class="w-[60vw] bg-white text-gray-900 rounded-2xl font-bold italic">
@@ -71,7 +71,7 @@ const servicesData=[
             v-for="(value, index) in servicesData" 
             :key="index" 
             :data="value" 
-            />
+            />786
             
         </div>
     </section>

@@ -2,7 +2,7 @@
 
 <template>
   <section class="flex justify-center items-center py-10 bg-white">
-    <div class="flex flex-wrap max-sm:flex-col justify-around gap-6 w-[62.5rem] rounded-2xl bg-[#f0f0f0] p-6 shadow-md">
+    <div class="flex flex-wrap justify-around  max-sm:grid max-sm:grid-cols-2 gap-6 w-[62.5rem] rounded-2xl bg-[#f0f0f0] p-6 shadow-md" style="padding: 0.5rem;">
       
       <div class="flex flex-col items-center text-center">
         <h4 class="font-montserrat font-bold text-2xl tracking-[0.1em] text-[#666666] mb-2">Müştəri</h4>

@@ -1,44 +1,69 @@
 <script setup>
-import { ref,defineProps } from 'vue';
+import { ref, defineProps } from 'vue';
 
-const hidden=ref('hidden')
+const hidden = ref(false);
 
-const detailedInfo=()=>{
-    if(hidden.value=='hidden'){
-        hidden.value='block'
-    }else if(hidden.value=='block'){
-        hidden.value='hidden'
-    }
-}
+const detailedInfo = () => {
+  hidden.value = !hidden.value;
+};
 
-const showData=defineProps({
-    data: {
-        type: Object,
-        requires: true
-    }
-})
+const showData = defineProps({
+  data: {
+    type: Object,
+    required: true, 
+  },
+});
+
 console.log(showData.data.title);
-
 </script>
 
 <template>
+  <section class="flex justify-center items-center min-h-[90vh] bg-slate-900 text-white p-4">
+    <div
+      class="flex flex-col md:flex-row items-center justify-center md:justify-between border border-b-blue-300 rounded-2xl w-full max-w-6xl gap-6 p-6 shadow-lg"
+        style="padding: 0.5rem;"
+      >
+      <div
+        class="flex justify-center items-center w-full md:w-1/2"
+      >
+        <img
+          :src="showData.data.image"
+          alt="cloud"
+          class="w-full max-w-[30rem] h-auto rounded-2xl"
+        />
+      </div>
 
-          <section class="flex  h-90vh relative">
-            <div class="flex items-center justify-center max-sm:flex-col  h-90vh sticky top-0 border border-b-blue-300 rounded-2xl" style="padding: 0.5rem;">
-                <div class="w-[45vw] h-[60vh] max-sm:w-[70vw] flex items-center justify-center"><img :src="showData.data.image" alt="cloud" class="w-[40rem] h-[50vh] rounded-2xl max-sm:w-[30rem] max-sm:h-[40vh]" ></div>
-                <div class="w-[30vw] max-sm:w-[50vw] bg-red">
-                    <h3 class="font-montserrat font-bold text-[24px] text-white leading-[150%] tracking-[0.12em] mb-12">
-                        {{ showData.data.title }}
-                    </h3>
-                    <p class="w-[25rem] max-sm:w-[15rem] max-sm:text-[0.7rem]"> {{ showData.data.shortDescription }}</p>
-                    <p :class="hidden === 'hidden' ? 'max-h-0 overflow-hidden transition-all duration-500' : 'max-h-[500px] transition-all duration-500 w-[25rem] max-sm:w-[15rem] max-sm:text-[0.7rem]'">
-                    {{ showData.data.detailedDescription }}
-                    </p>
-                    <button style="padding: 1rem;" class="rounded-xl border  border-gray-500  hover:bg-black hover:text-amber-100 transition-all" @click="detailedInfo">
-                    Daha ətrafı
-                    </button>                
-                </div>
-            </div>
-          </section>  
-          <br>
+      <div
+        class="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4"
+      >
+        <h3
+          class="font-montserrat font-bold text-[22px] sm:text-[26px] md:text-[28px] leading-[150%] tracking-[0.12em]"
+        >
+          {{ showData.data.title }}
+        </h3>
+
+        <p
+          class="text-gray-300 text-sm sm:text-base w-[90%] md:w-[25rem] text-center md:text-left"
+        >
+          {{ showData.data.shortDescription }}
+        </p>
+
+        <p
+          :class="hidden
+            ? 'max-h-0 overflow-hidden transition-all duration-500'
+            : 'max-h-[500px] transition-all duration-500 text-gray-400 text-sm sm:text-base w-[90%] md:w-[25rem] text-center md:text-left'"
+        >
+          {{ showData.data.detailedDescription }}
+        </p>
+
+        <button
+          class="mt-2 px-6 py-2 sm:px-8 sm:py-3 rounded-xl border border-gray-500 hover:bg-white hover:text-black transition-all duration-300"
+          @click="detailedInfo"
+          style="padding: 0.5rem;"
+        >
+          {{ hidden ? 'Daha ətraflı' : 'Daha az' }}
+        </button>
+      </div>
+    </div>
+  </section>
 </template>

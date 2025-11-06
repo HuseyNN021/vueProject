@@ -28,7 +28,7 @@ function sendMessage() {
 <template>
   <section class="flex flex-col justify-center items-center bg-gray-900 py-16 text-white">
     <h3
-      class="font-montserrat font-bold text-[48px] text-white leading-[150%] tracking-[0.12em] mb-12"
+      class="font-montserrat font-bold text-[48px] text-white leading-[150%] tracking-[0.12em] mb-12 text-center"
     >
       Bizimlə əlaqə saxlayın
     </h3>
@@ -48,7 +48,7 @@ function sendMessage() {
 
     <div class="flex flex-col items-center justify-center gap-10 w-full px-6">
       <h4
-        class="font-montserrat font-bold text-[24px] text-white leading-[150%] tracking-[0.12em] mb-6"
+        class="font-montserrat font-bold text-[24px] text-white leading-[150%] tracking-[0.12em] mb-6 text-center"
       >
         Bizimlə əlaqə qurmaq istəsəz, zəhmət olmasa qeydiyyatdan keçin
       </h4>
@@ -136,7 +136,7 @@ function sendMessage() {
       </form>
     </div>
 
-    <div class="flex flex-col justify-center items-center mt-16 space-y-8">
+    <div class="flex flex-col justify-center items-center mt-16 space-y-8" style="padding: 0.5rem;">
       <h4 class="font-montserrat font-bold text-[24px] text-white leading-[150%] tracking-[0.12em]">
         Əlaqə məlumatları
       </h4>
@@ -145,12 +145,12 @@ function sendMessage() {
           <img src="../assets/Images/map.jpg" alt="Map" class="rounded-2xl shadow-lg w-[400px]" />
         </div>
 
-        <div class="grid grid-cols-2 gap-10 w-[80vw] lg:w-1/2 max-sm:grid-cols-1">
+        <div class="grid grid-cols-2 gap-10 w-[80vw] lg:w-1/2 ">
           <div class="flex items-start gap-4">
             <i class="pi pi-map-marker text-2xl text-blue-400 p-3 bg-gray-800 rounded-full"></i>
             <div>
               <p class="font-semibold">Ünvan:</p>
-              <p>Bakı, Azərbaycan</p>
+              <p class="text-xs">Bakı, Azərbaycan</p>
             </div>
           </div>
 
@@ -158,7 +158,7 @@ function sendMessage() {
             <i class="pi pi-envelope text-2xl text-blue-400 p-3 bg-gray-800 rounded-full"></i>
             <div>
               <p class="font-semibold">Email:</p>
-              <p>info@hmc.az</p>
+              <p class="text-xs">info@hmc.az</p>
             </div>
           </div>
 
@@ -166,7 +166,7 @@ function sendMessage() {
             <i class="pi pi-mobile text-2xl text-blue-400 p-3 bg-gray-800 rounded-full"></i>
             <div>
               <p class="font-semibold">Telefon:</p>
-              <p>+994 12 310 55 11</p>
+              <p class="text-xs">+994 12 310 55 11</p>
             </div>
           </div>
 
@@ -174,7 +174,7 @@ function sendMessage() {
             <i class="pi pi-phone text-2xl text-blue-400 p-3 bg-gray-800 rounded-full"></i>
             <div>
               <p class="font-semibold">Mobil:</p>
-              <p>+994 77 477 55 11</p>
+              <p class="text-xs">+994 77 477 55 11</p>
             </div>
           </div>
         </div>

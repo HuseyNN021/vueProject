@@ -18,11 +18,11 @@ import { RouterLink } from 'vue-router';
         <div>
           <img src="https://www.hmc.az/assets/images/macbook.png" class="max-sm:w-[70vw]" alt="Macbook" />
         </div>
-        <div class="w-[550px] flex flex-col items-center justify-center gap-3 text-center">
+        <div class="w-[35rem] flex flex-col items-center justify-center gap-3 text-center">
           <h2 class="font-montserrat font-bold text-4xl tracking-[0.1em] leading-[110%]">
             Biz kimik?
           </h2>
-          <p class=" text-sm leading-relaxed">
+          <p class=" text-sm leading-relaxed max-sm:w-[80vw]" style="padding: 1rem;">
             “HMC Company” 2013-cü ildə fəaliyyətə başlamışdır. İstər kiçik ölçülü, istərsə də böyük
             ölçülü şirkətlərə peşəkar səviyyədə İnformasiya Kommunikasiya Texnologiyaları (İKT)
             xidmətləri göstəririk. Bu sahədə əsas fərqli cəhətimiz ən qabaqcıl texnoloji biliklərə və

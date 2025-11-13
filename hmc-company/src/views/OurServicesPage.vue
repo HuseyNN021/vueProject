@@ -1,7 +1,6 @@
 <script setup>
 import ServicesCard from '@/components/ServicesCard.vue';
 import Footer from '@/components/Footer.vue';
-import { ref } from 'vue';
 import IpTelephony from '../assets/Images/serviceIpTelephony.webp'
 import ItOutsourcing from '../assets/Images/serviceItAutosourcing.jpg'
 import WebHosting from '../assets/Images/serviceWebHostinq.jpg'
@@ -59,19 +58,19 @@ const servicesData=[
 
     <section class="flex flex-col justify-center gap-5 items-center bg-gray-900 py-16 text-white rounded-2xl">
 
-        <h3 class="font-montserrat font-bold text-[48px] text-white leading-[150%] tracking-[0.12em] mb-12 text-center">
+        <h3 class="font-montserrat font-bold text-[48px] text-white leading-[150%] tracking-[0.12em] mb-12 text-center max-sm:text-3xl">
             HMC Company
         </h3>
-        <p style="padding: 1rem;" class="w-[60vw] bg-white text-gray-900 rounded-2xl font-bold italic">
+        <p style="padding: 1rem;" class="w-[60vw] bg-white text-gray-900 rounded-2xl font-bold italic max-sm:text-xs">
             “HMC Company olaraq, bizneslərin dayanıqlı və təhlükəsiz şəkildə fəaliyyət göstərməsi üçün geniş çeşiddə İT xidmətləri təqdim edirik.
              Aşağıda sizə təklif etdiyimiz əsas istiqamətlər haqqında ətraflı məlumat verilib.”
         </p>
-        <div >
+        <div class="flex flex-col gap-2" style="padding: 0.5rem;">
            <ServicesCard 
             v-for="(value, index) in servicesData" 
             :key="index" 
             :data="value" 
-            />786
+            />
             
         </div>
     </section>

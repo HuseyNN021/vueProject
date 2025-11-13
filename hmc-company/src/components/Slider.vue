@@ -40,7 +40,7 @@ const prevImage = () => {
     <div class="flex justify-center items-center max-sm:flex-col w-60vw">
       <div class="flex flex-col justify-center items-center">
 
-          <h1 class="font-montserrat font-bold w-[50vw] text-[48px] max-sm:text-[2rem] text-gray-500 leading-[150%] tracking-[0.12em]">{{ propsSlider.data[showImage].title }}</h1>
+          <h1 class="font-montserrat font-bold w-[50vw] text-[48px] max-lg:text-2xl max-sm:text-xl text-gray-500 leading-[150%] tracking-[0.12em]">{{ propsSlider.data[showImage].title }}</h1>
 
           <RouterLink to="/services">
 
@@ -52,7 +52,7 @@ const prevImage = () => {
 
 
       </div>
-      <img :src="propsSlider.data[showImage].image" alt="image" class="w-[30vw] h-[50vh] max-lg:h-[30vh] max-sm:hidden  rounded-2xl" />
+      <img :src="propsSlider.data[showImage].image" alt="image" class="w-[30rem] h-[20rem] max-lg:h-[15rem] max-lg:w-[20rem] max-sm:hidden  rounded-2xl" />
     
     </div>
 

@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="flex flex-col justify-center items-center bg-indigo-900 gap-4 rounded-t-2xl   ">
+  <section class="flex flex-col justify-center items-center bg-gray-700 gap-4 border border-t-amber-50 rounded-t-2xl  ">
     <div class="flex flex-col text-white  lg:flex-row md:flex-row  justify-around items-center gap-16 max-w-6xl w-full">
 
         <div>
@@ -16,8 +16,10 @@
             <h6>Bizə abunə olun:</h6>
             <form class="flex w-[20rem] items-center">
                 <input type="text">
-                <button   class="box-border w-[20rem] flex flex-row justify-center items-center px-5 py-2 bg-white border-2 border-white rounded-md font-montserrat font-bold text-[16px] leading-[150%] text-[#666666] cursor-pointer transition ease-in duration-200"
->Abunə olmaq</button>
+                <button   
+                 class="box-border w-[20rem] flex flex-row justify-center items-center px-5 py-2 bg-white border-2 border-white rounded-md font-montserrat font-bold text-[16px] leading-[150%] text-[#666666] cursor-pointer transition ease-in duration-200"
+                  >Abunə olmaq
+                </button>
             </form>
             <p>© 2024 HMC Company. Bütün hüquqlar qorunur.</p>
         </div>

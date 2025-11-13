@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router';
     ></div>
 
     <div class="relative z-10 bg-black/30 rounded-2xl flex flex-col items-center justify-center gap-8 py-8">
-      <h1 class="font-montserrat font-bold text-5xl tracking-[0.1em] leading-[110%] ">
+      <h1 class="font-montserrat font-bold text-5xl tracking-[0.1em] leading-[110%] max-sm:text-4xl">
         Haqqımızda
       </h1>
 
@@ -19,10 +19,10 @@ import { RouterLink } from 'vue-router';
           <img src="https://www.hmc.az/assets/images/macbook.png" class="max-sm:w-[70vw]" alt="Macbook" />
         </div>
         <div class="w-[35rem] flex flex-col items-center justify-center gap-3 text-center">
-          <h2 class="font-montserrat font-bold text-4xl tracking-[0.1em] leading-[110%]">
+          <h2 class="font-montserrat font-bold text-4xl tracking-[0.1em] leading-[110%] max-sm:text-2xl">
             Biz kimik?
           </h2>
-          <p class=" text-sm leading-relaxed max-sm:w-[80vw]" style="padding: 1rem;">
+          <p class=" text-sm leading-relaxed max-sm:w-[80vw] text-justify" style="padding: 1rem;">
             “HMC Company” 2013-cü ildə fəaliyyətə başlamışdır. İstər kiçik ölçülü, istərsə də böyük
             ölçülü şirkətlərə peşəkar səviyyədə İnformasiya Kommunikasiya Texnologiyaları (İKT)
             xidmətləri göstəririk. Bu sahədə əsas fərqli cəhətimiz ən qabaqcıl texnoloji biliklərə və

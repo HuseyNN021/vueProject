@@ -36,6 +36,7 @@ const reyler=defineProps({
 <style scoped>
 section{
     margin-bottom: 1rem;
+    padding: 0.5rem; 
 }
 i, .commentPadding{
     padding: 1rem;

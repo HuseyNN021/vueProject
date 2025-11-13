@@ -42,15 +42,15 @@ const comments=ref([
 <template>
 
 <div class="bg-gray-900">
-<section class="relative flex flex-col justify-center items-center bg-gray-900">
+<section class="relative flex flex-col justify-center items-center bg-gray-900" >
   <div class="absolute inset-0  bg-[url('../assets/Images/futuristic-white-technology-background_23-2148390336.jpg')] bg-cover bg-center blur-sm opacity-100 z-0"></div>
 
-  <h3 class="relative z-10 font-montserrat font-bold text-[48px] text-[#666] leading-[150%] tracking-[0.12em] mb-12">
+  <h3 class="relative z-10 font-montserrat font-bold text-[48px] text-[#666] leading-[150%] tracking-[0.12em] mb-12 max-sm:text-3xl">
     HMC Company
   </h3>
-  <div class="relative z-10 flex justify-around w-full max-sm:flex-col items-center gap-5 divPadding">
-    <img src="../assets/Images/HMC.jpg" class="w-[30vw] max-sm:w-[70vw] rounded-2xl" alt="HMC" />
-    <p class="w-[50vw] max-sm:text-xs max-sm:w-[70vw] bg-blue-200 rounded-2xl font-montserrat not-italic font-normal text-base text-blue-950 leading-[150%] tracking-[0.12em] text-center">
+  <div class="relative z-10 flex justify-around w-full max-sm:flex-col max-md:flex-col items-center gap-5 divPadding">
+    <img src="../assets/Images/HMC.jpg" class="w-[30vw] max-sm:w-[70vw] max-md:w-[50vw] rounded-2xl" alt="HMC" />
+    <p class="w-[50vw] max-sm:text-xs max-md:text-xs max-lg:text-xs max-sm:w-[70vw] bg-blue-200 rounded-2xl font-montserrat not-italic font-normal text-base text-blue-950 leading-[150%] tracking-[0.12em] text-center">
       "HMC Company" 2013-cü ildə fəaliyyətə başlamışdır. İstər kiçik ölçülü, istərsə də böyük ölçülü şirkətlərə peşəkar 
       səviyyədə İnformasiya Kommunikasiya Texnologiyaları (İKT) xidmətləri göstəririk. Bu sahədə əsas fərqli cəhətimiz ən 
       qabaqcıl texnoloji biliklərə və təcrübəyə sahib aparıcı mütəxəssislərimizin olması və dünyanın ən qabaqcıl şirkətləri ilə 

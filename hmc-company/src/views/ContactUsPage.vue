@@ -26,14 +26,15 @@ function sendMessage() {
 </script>
 
 <template>
-  <section class="flex flex-col justify-center items-center bg-gray-900 py-16 text-white">
+  <div class="bg-gray-900">
+      <section class="flex flex-col justify-center items-center bg-gray-900 py-16 text-white" style="padding: 0.5rem;">
     <h3
-      class="font-montserrat font-bold text-[48px] text-white leading-[150%] tracking-[0.12em] mb-12 text-center"
-    >
+      class="font-montserrat font-bold text-[48px] text-white leading-[150%] tracking-[0.12em] mb-12 text-center max-sm:text-3xl"
+      >
       Bizimlə əlaqə saxlayın
     </h3>
 
-    <div class="text-center max-w-3xl flex flex-col gap-5 space-y-4 mb-12" >
+    <div class="text-center max-w-3xl flex flex-col gap-5 space-y-4 mb-12 max-sm: text-sm" >
       <p class="bg-gray-800 rounded-2xl p-4" style="padding: 1rem;">
         HMC Company 2013-cü ildən etibarən informasiya texnologiyaları sahəsində fəaliyyət göstərir.
         Biz kiçik və iri bizneslərə yüksək keyfiyyətli İKT xidmətləri təqdim edirik.
@@ -48,7 +49,7 @@ function sendMessage() {
 
     <div class="flex flex-col items-center justify-center gap-10 w-full px-6">
       <h4
-        class="font-montserrat font-bold text-[24px] text-white leading-[150%] tracking-[0.12em] mb-6 text-center"
+        class="font-montserrat font-bold text-[24px] text-white leading-[150%] tracking-[0.12em] mb-6 text-center max-sm:text-base"
       >
         Bizimlə əlaqə qurmaq istəsəz, zəhmət olmasa qeydiyyatdan keçin
       </h4>
@@ -57,7 +58,7 @@ function sendMessage() {
         <div class="relative">
           <label
             for="name"
-            class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2"
+            class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2 max-sm:text-xs"
             style="padding: 0.2em;"
           >
             Ad və Soyad
@@ -68,14 +69,14 @@ function sendMessage() {
             type="text"
             maxlength="100"
             class="w-full border-2 border-gray-600 bg-gray-800 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all"
-            style="padding: 1rem;"          
+            style="padding: 1.5rem;"          
             />
         </div>
 
         <div class="relative">
           <label
             for="phone"
-            class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2"
+            class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2 max-sm:text-xs"
             style="padding: 0.2rem;"          
             >
             Əlaqə nömrəsi
@@ -86,14 +87,14 @@ function sendMessage() {
             type="text"
             maxlength="100"
             class="w-full border-2 border-gray-600 bg-gray-800 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all"
-            style="padding: 1rem;"          
+            style="padding: 1.5rem;"          
             />
         </div>
 
         <div class="relative">
           <label
             for="mail"
-            class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2"
+            class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2 max-sm:text-xs"
             style="padding: 0.2rem;"          
             >
             Email
@@ -104,7 +105,7 @@ function sendMessage() {
             type="email"
             maxlength="100"
             class="w-full border-2 border-gray-600 bg-gray-800 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all"
-            style="padding: 1rem;"
+            style="padding: 1.5rem;"
 
             />
         </div>
@@ -112,7 +113,7 @@ function sendMessage() {
         <div class="relative">
           <label
             for="mesaj"
-            class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2 "
+            class="absolute -top-3 left-4 text-[16px] font-semibold text-white bg-gray-900 px-2 max-sm:text-xs "
             style="padding: 0.2rem;"          
             >
             Mesajınız
@@ -121,8 +122,8 @@ function sendMessage() {
             id="mesaj"
             v-model="mesaj"
             maxlength="300"
-            class="w-full h-[6rem] border-2 border-gray-600 bg-gray-800 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all resize-none"
-            style="padding: 1rem;"
+            class="w-full h-[7rem] border-2 border-gray-600 bg-gray-800 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all resize-none"
+            style="padding: 1.5rem;"
             ></textarea>
         </div>
 
@@ -185,6 +186,7 @@ function sendMessage() {
   </section>
 
   <Footer />
+  </div>
 </template>
 
 <style scoped>

@@ -1,7 +1,7 @@
 <script setup>
 import { ref, defineProps } from 'vue';
 
-const hidden = ref(false);
+const hidden = ref(true);
 
 const detailedInfo = () => {
   hidden.value = !hidden.value;
@@ -18,7 +18,7 @@ console.log(showData.data.title);
 </script>
 
 <template>
-  <section class="flex justify-center items-center min-h-[90vh] bg-slate-900 text-white p-4">
+  <section class="flex justify-center items-center min-h-[40vh] bg-slate-900 text-white p-4 max-sm:w-[80vw]">
     <div
       class="flex flex-col md:flex-row items-center justify-center md:justify-between border border-b-blue-300 rounded-2xl w-full max-w-6xl gap-6 p-6 shadow-lg"
         style="padding: 0.5rem;"
@@ -29,29 +29,29 @@ console.log(showData.data.title);
         <img
           :src="showData.data.image"
           alt="cloud"
-          class="w-full max-w-[30rem] h-auto rounded-2xl"
+          class="w-full w-[30rem] h-[15rem] rounded-2xl max-md:w-[27rem] max-md:h-[14rem] max-sm:w-[25rem] max-sm:h-[12rem]"
         />
       </div>
 
       <div
-        class="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4"
+        class="w-full md:w-1/2 flex flex-col justify-center items-center  space-y-4"
       >
         <h3
-          class="font-montserrat font-bold text-[22px] sm:text-[26px] md:text-[28px] leading-[150%] tracking-[0.12em]"
+          class="font-montserrat font-bold text-[22px] sm:text-[26px] md:text-[28px] leading-[150%] tracking-[0.12em] text-center"
         >
           {{ showData.data.title }}
         </h3>
-
+        <br>
         <p
-          class="text-gray-300 text-sm sm:text-base w-[90%] md:w-[25rem] text-center md:text-left"
+          class="text-justify text-gray-300 text-sm sm:text-base w-[90%] md:w-[25rem] "
         >
           {{ showData.data.shortDescription }}
         </p>
-
+        <br>
         <p
           :class="hidden
             ? 'max-h-0 overflow-hidden transition-all duration-500'
-            : 'max-h-[500px] transition-all duration-500 text-gray-400 text-sm sm:text-base w-[90%] md:w-[25rem] text-center md:text-left'"
+            : 'max-h-[500px] transition-all duration-500 text-gray-300 text-sm sm:text-base w-[90%] md:w-[25rem]   text-justify'"
         >
           {{ showData.data.detailedDescription }}
         </p>

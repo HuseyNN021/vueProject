@@ -4,17 +4,17 @@ import 'primeicons/primeicons.css'
 
 <template>
   <section class="flex flex-col items-center py-16 px-6 bg-gray-50">
-    <h3 class="font-montserrat font-bold text-[48px] text-[#666] leading-[150%] tracking-[0.12em] mb-12 text-center">
+    <h3 class="font-montserrat font-bold text-[48px] text-[#666] leading-[150%] tracking-[0.12em] mb-12 text-center max-sm:text-2xl">
       Bizimlə əlaqə
     </h3>
 
-    <div class="flex flex-col  lg:flex-row md:flex-row  justify-between items-center gap-16 max-w-6xl w-full">
+    <div class="flex flex-col  max-lg:flex-row md:flex-row  max-sm:flex-col justify-around items-center gap-16 max-w-6xl w-full">
       <div class="flex flex-col gap-6   w-full lg:w-1/2 max-sm:grid max-sm:grid-cols-2 ">
         <div class="flex items-start gap-4">
           <i class="pi pi-map-marker text-2xl text-[#666] p-3 bg-gray-200 rounded-full"></i>
           <div>
             <p class="font-semibold text-[#666]">Ünvan:</p>
-            <p class="text-[#666]">Bakı, Azərbaycan</p>
+            <p class="text-[#666] max-sm:text-sm">Bakı, Azərbaycan</p>
           </div>
         </div>
 
@@ -22,7 +22,7 @@ import 'primeicons/primeicons.css'
           <i class="pi pi-envelope text-2xl text-[#666] p-3 bg-gray-200 rounded-full"></i>
           <div>
             <p class="font-semibold text-[#666]">Email:</p>
-            <p class="text-[#666]">info@hmc.az</p>
+            <p class="text-[#666] max-sm:text-sm">info@hmc.az</p>
           </div>
         </div>
 
@@ -30,7 +30,7 @@ import 'primeicons/primeicons.css'
           <i class="pi pi-mobile text-2xl text-[#666] p-3 bg-gray-200 rounded-full"></i>
           <div>
             <p class="font-semibold text-[#666]">Telefon:</p>
-            <p class="text-[#666]">+994 12 310 55 11</p>
+            <p class="text-[#666] max-sm:text-xs">+994 12 310 55 11</p>
           </div>
         </div>
 
@@ -38,7 +38,7 @@ import 'primeicons/primeicons.css'
           <i class="pi pi-phone text-2xl text-[#666] p-3 bg-gray-200 rounded-full"></i>
           <div>
             <p class="font-semibold text-[#666]">Mobil:</p>
-            <p class="text-[#666]">+994 77 477 55 11</p>
+            <p class="text-[#666] max-sm:text-xs">+994 77 477 55 11</p>
           </div>
         </div>
 
@@ -115,8 +115,10 @@ import 'primeicons/primeicons.css'
 </template>
 
 <style scoped>
-
-i,input,textarea{ 
+h3{
+  margin-bottom: 1rem;
+}
+i,section,input,textarea{ 
     padding: 0.5rem; 
   }
 </style>
